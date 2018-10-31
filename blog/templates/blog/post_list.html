@@ -1,5 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <title>Sztuczna inteligencja</title>
+  <meta charset="UTF-8">
+
+<h1>
+  Sztuczna inteligencja-czy to możliwe?
+</h1>
+<script>
+function Powitanie() {
+    document.getElementById("z").innerHTML = "<strong>Oczywiście, że jest to możliwe!</strong>";
+}
+</script>
+</head>
 <body>
-<p>Hi!</p>
+  <p id="z">Dzień dobry!</p>
+
+  <button type="button" onclick="Powitanie()">Chcę poznać odpowiedź!</button>
+  <p id="dzień"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "niedziela";
+        break;
+    case 1:
+        day = "poniedziałek";
+        break;
+    case 2:
+        day = "wtorek";
+        break;
+    case 3:
+        day = "środa";
+        break;
+    case 4:
+        day = "czwartek";
+        break;
+    case 5:
+        day = "piątek";
+        break;
+    case  6:
+        day = "sobota";
+}
+document.getElementById("dzień").innerHTML = "Dzień tygodnia: " + day;
+</script>
+
+
+
+  <aside>
+
+  <p><strong>  Przydatne linki:</strong></p>
+  <p id="linki" style="display:none">
+  <a href="https://mlodytechnik.pl/technika/28754-sztuczna-inteligencja-budzi-leki-ale-czy-rzeczywiscie-jest-blisko">Dowiedz się więcej</a>
+  <br><a href="https://www.pwc.pl/pl/publikacje/2018/sztuczna-inteligencja-prognozy-na-2018-rok-pwc.html">Prognozy na przyszłość</a></br>
+</p><button type="button" onclick="document.getElementById('linki').style.display='block'">Pokaż!</button>
+
+
+  </aside>
+  <nav>
+    <ul>
+        <li> Strona główna </li>
+        <li> Rozwinięcie </li>
+    </ul>
+</nav>
+
+<p><img src="sztuczna.jpg" title="SI"></p>
+<div>
+<p><em><strong>Sztuczna inteligencja</em></strong> – dziedzina wiedzy obejmująca logikę rozmytą, obliczenia ewolucyjne,</p>
+<p>sieci neuronowe, sztuczne życie i robotykę.</p>
+<p>Sztuczna inteligencja to również dział informatyki zajmujący się inteligencją – </p>
+<p>tworzeniem modeli zachowań inteligentnych oraz programów komputerowych symulujących te zachowania.</p>
+<p>Można ją też zdefiniować jako dział informatyki zajmujący się rozwiązywaniem problemów,</p>
+<p>które nie są efektywnie algorytmizowalne. Termin wymyślił John McCarthy w 1956.</p>
+</div>
+
+<footer>
+Dziękuję za uwagę!
+</footer>
+
 </body>
 </html>
